@@ -1,0 +1,27 @@
+ALGORITHM synthese
+VAR
+    str =STRING
+    i=INTEGER;=0
+    phr=INTEGER;=0
+    mot=INTEGER;=0
+    nbv=INTEGER;=0
+
+
+BEGIN
+WHILE (str[i] <> "." ) DO
+    FOR i FROM 0 TO str.lenght-1 STEP 1 DO
+        IF (str[i] = " " ) THEN
+            mot=mot+1
+        END_IF
+        IF (str[i] =[a,o,u,y,i]) THEN
+            nbv=nbv+1 
+            phr=phr+1
+            
+            ELSE
+            phr=phr+1
+                
+        END_IF
+    END_FOR
+END_WHILE
+END_FOR
+END
